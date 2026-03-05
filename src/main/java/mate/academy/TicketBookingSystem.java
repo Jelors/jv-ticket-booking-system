@@ -7,7 +7,6 @@ public class TicketBookingSystem implements Runnable {
     private final int totalSeats;
     private Semaphore semaphore;
 
-
     public TicketBookingSystem(int totalSeats) {
         this.totalSeats = totalSeats;
         this.semaphore = new Semaphore(totalSeats);
